@@ -1,0 +1,58 @@
+<html>
+<head>
+    <style>
+        table {
+            border-collapse: ;
+        }
+        td, th {
+            border: 2px solid black;
+            padding: 5px;           
+            text-align: center;
+        }
+        th {
+            font-weight: bold;
+            background-color: #E6E6E6;
+        }
+    </style>
+</head>
+<body>
+<h1><strong><u>CALENDER</u></strong></h2>
+    <div id="calendar"></div>
+    <br>
+    Enter a year: <input type="text" id="year">
+    <br><br>
+    <input type="button" value="Generate Calendar" onclick="createCalendar()">	
+    <script>
+        function createCalendar() {
+            const year = document.getElementById('year').value;
+            const months = [
+                'January', 'February', 'March', 'April', 'May', 'June', 
+                'July', 'August', 'September', 'October', 'November', 'December'];
+            const calendarDiv = document.getElementById('calendar');
+            calendarDiv.innerHTML = ''; 
+            for (let mon = 0; mon < 12; mon++) {
+                let d = new Date(year, mon, 1);
+                let table = `<table><tr><th colspan="7"><strong>${months[mon]} ${year}</strong></th></tr>`;
+                table += `<tr><th>SU</th><th>MO</th><th>TU</th><th>WE</th><th>TH</th><th>FR</th><th>SA</th></tr><tr>`;                       
+                for (let i = 0; i < d.getDay(); i++) {
+                    table += '<td></td>';
+                }
+                while (d.getMonth() === mon) {
+                    table += `<td>${d.getDate()}</td>`;
+                    if (d.getDay() === 6) { 
+                        table += '</tr><tr>';
+                    }
+                    d.setDate(d.getDate() + 1);
+                }                         
+                if (d.getDay() !== 0) {
+                    for (let i = d.getDay(); i < 7; i++) {
+                        table += '<td></td>';
+                    }
+                }               
+                table += '</tr></table><br>';
+                calendarDiv.insertAdjacentHTML('beforeend', table);
+            }
+        }
+    </script>
+</body>
+</html>
