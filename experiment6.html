@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>java script string and math function</title>
+    </head>
+    <body>
+        <h1 style="color:red"><u>JS STRING AND MATH FUNCTIONS</u></h1>
+        <h2 style="color:blue"><u>STRING FUNCTIONS:</u></h2>
+
+        <script>
+            let string="Hello world";
+            let y="smile"
+            document.write(`String=${string}<br/>`);
+            document.write(`Length: ${string.length}<br>`); 
+            document.write(`Substring using slice:`,string.slice(5,12));
+            document.write(`<br>Substring using substr:`,string.substr(5,12));
+            document.write(`<br>Concatination:`,string.concat(" ",y));
+            document.write(`<br>Replace:`,string.replace("Hello","Hi"));
+            document.write(`<br>Uppercase:`,string.toUpperCase());
+            document.write(`<br>LowerCase:`,string.toLowerCase());
+            document.write(`<br>Index of i:`,string.indexOf("w"));
+            document.write(`<br>Last index of Here:`,string.lastIndexOf("world"));
+            document.write(`<br>Character at position 5: `,string.charAt(6));
+            document.write("<br/><br/>");
+    document.write("<b><u>MATH FUNCTION:</u></b><br>");
+            var x=25.4;
+            document.write("Number=",x);
+            document.write(`<br>Square Root : `,Math.sqrt(x));
+            document.write(`<br>Power to 3 : `,Math.pow(x,3));
+            document.write(`<br>Absolut Value : `,Math.abs(x));
+            document.write(`<br>Round Value : `,Math.round(x));
+            document.write(`<br>Ceil Value : `,Math.ceil(x));
+            document.write(`<br>Floor Value : `,Math.floor(x));
+            document.write(`<br>Pi Value : `,Math.PI);
+            document.write(`<br>Max value in (23,5,17) : `,Math.max(23,5,17));
+            document.write(`<br>MIn value in (42,1,17) : `,Math.min(42,1,17));
+
+        </script>
+    </body>
+</html>
