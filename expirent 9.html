@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Mouse over</title>
+    </head>
+<body>
+    <h1 id="text" >HI</h1>
+    <img src="download (1).jpeg" onmouseover="onmouse()" onmouseout="outmouse()" id="image">
+    <script>
+        function onmouse(){
+            document.getElementById('text').innerText='NATURAL VIEW';
+            document.getElementById('image').src='cover.jpg';
+        }
+        function outmouse(){
+            document.getElementById('text').innerText='BIRD';
+            document.getElementById('image').src='download (1).jpeg';
+        }
+    </script>
+</body>
+</html>
