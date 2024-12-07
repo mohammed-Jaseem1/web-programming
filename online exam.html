@@ -1,0 +1,210 @@
+<html>
+<head>
+    <title>Online Exam</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+        .container {
+            background-color:cyan;
+            padding:5px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+        }
+        .question {
+            margin: 20px 0;
+        }
+        .options label {
+          
+            margin: 5px 0;
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .result {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><u>Online Exam</u></h1>
+        <form id="examForm">
+            <div class="question">
+                <p><strong>1. who is the father of computer?</strong></p>
+                <div class="options">
+                    <input type="radio" name="q1" value="john" id="q1a">
+                    <label for="q1a">A.john</label>
+                    <input type="radio" name="q1" value="mathue" id="q1b">
+                    <label for="q1b">B.mathue</label>
+                    <input type="radio" name="q1" value="Charles Babbage" id="q1c">
+                    <label for="q1c">C.Charles Babbage</label>
+                    <input type="radio" name="q1" value="aswin berlin" id="q1d">
+                    <label for="q1d">D.aswin berlin</label>
+                </div>
+            </div>
+            <div class="question">
+                <p><strong>2.who is the father of HTML ?</strong></p>
+                <div class="options">
+                    <input type="radio" name="q2" value="Sir Timothy John Berners-Lee" id="q2a">
+                    <label for="q2a">A.Sir Timothy John Berners-Lee</label>
+                    <input type="radio" name="q2" value="jackson" id="q2b">
+                    <label for="q2b">B.jackson</label>
+                    <input type="radio" name="q2" value="loranes" id="q2c">
+                    <label for="q2c">C.loranes</label>
+                    <input type="radio" name="q2" value="kumar" id="q2d">
+                    <label for="q2d">D.kumar</label>
+                </div>
+            </div>
+            <div class="question">
+                <p><strong>3.which the lanugage use for a webpage ?</strong></p>
+                <div class="options">
+                    <input type="radio" name="q3" value="HTML" id="q3a">
+                    <label for="q3a">A.HTML</label>
+                    <input type="radio" name="q3" value="c++" id="q3b">
+                    <label for="q3b">B.c++</label>
+                    <input type="radio" name="q3" value="c" id="q3c">
+                    <label for="q3c">C.c</label>
+                    <input type="radio" name="q3" value="java" id="q3d">
+                    <label for="q3d">D.java</label>
+                </div>
+            </div>
+              <div class="question">
+                <p><strong>4.Which of the following CSS properties is used to control the space between the content and the border of an element?</strong></p>
+                <div class="options">
+                    <input type="radio" name="q4" value="padding" id="q3a">
+                    <label for="q4a">A.padding</label>
+                    <input type="radio" name="q4" value="margin" id="q3b">
+                    <label for="q4b">B.margin</label>
+                    <input type="radio" name="q4" value="border-spacing" id="q3c">
+                    <label for="q4c">C.border-spacing</label>
+                    <input type="radio" name="q4" value="spacing" id="q3d">
+                    <label for="q4d">D.spacing</label>
+                </div>
+            </div>
+              <div class="question">
+                <p><strong>5.Which property is used to change the background color of an element in CSS?</strong></p>
+                <div class="options">
+                    <input type="radio" name="q5" value="background-color" id="q3a">
+                    <label for="q5a">A.background-color</label>
+                    <input type="radio" name="q5" value="color" id="q3b">
+                    <label for="q5b">B.color</label>
+                    <input type="radio" name="q5" value="background" id="q3c">
+                    <label for="q5c">C.background</label>
+                    <input type="radio" name="q5" value="color-background" id="q3d">
+                    <label for="q5d">D.color-background</label>
+                </div>
+            </div>
+              <div class="question">
+                <p><strong>6.Which element is used to create a dropdown list in HTML?</strong></p>
+                <div class="options">
+                    <input type="radio" name="q6" value="input" id="q3a">
+                    <label for="q6a">A.input</label>
+                    <input type="radio" name="q6" value="select" id="q3b">
+                    <label for="q6b">B.select</label>
+                    <input type="radio" name="q6" value="textarea" id="q3c">
+                    <label for="q6c">C.textarea</label>
+                    <input type="radio" name="q6" value="list" id="q3d">
+                    <label for="q6d">D.list</label>
+                </div>
+            </div>
+              <div class="question">
+                <p><strong>7.Which of the following tags is used for creating a table in HTML?</strong></p>
+                <div class="options">
+                    <input type="radio" name="q7" value="table" id="q3a">
+                    <label for="q7a">A.table</label>
+                    <input type="radio" name="q7" value="tab" id="q3b">
+                    <label for="q7b">B.tab</label>
+                    <input type="radio" name="q7" value="td" id="q3c">
+                    <label for="q7c">C.td</label>
+                    <input type="radio" name="q7" value="tr" id="q3d">
+                    <label for="q7d">D.tr</label>
+                </div>
+            </div>
+              <div class="question">
+                <p><strong>8.Which HTML tag is used to display an image on a webpage ?</strong></p>
+                <div class="options">
+                    <input type="radio" name="q8" value="img" id="q3a">
+                    <label for="q8a">A.img</label>
+                    <input type="radio" name="q8" value="image" id="q3b">
+                    <label for="q8b">B.image</label>
+                    <input type="radio" name="q8" value="pic" id="q3c">
+                    <label for="q8c">C.pic</label>
+                    <input type="radio" name="q8" value="src" id="q3d">
+                    <label for="q8d">D.src</label>
+                </div>
+            </div>
+              <div class="question">
+                <p><strong>9.Which attribute is used to specify the destination URL of a link in HTML?</strong></p>
+                <div class="options">
+                    <input type="radio" name="q9" value="href" id="q3a">
+                    <label for="q9a">A.href</label>
+                    <input type="radio" name="q9" value="src" id="q3b">
+                    <label for="q9b">B.src</label>
+                    <input type="radio" name="q9" value="link" id="q3c">
+                    <label for="q9c">C.link</label>
+                    <input type="radio" name="q9" value="alt" id="q3d">
+                    <label for="q9d">D.alt</label>
+                </div>
+            </div>
+              <div class="question">
+                <p><strong>10.What is the correct HTML element to define important text?	</strong></p>
+                <div class="options">
+                    <input type="radio" name="q10" value="strong" id="q3a">
+                    <label for="q10a">A.strong</label>
+                    <input type="radio" name="q10" value="b" id="q3b">
+                    <label for="q10b">B.b</label>
+                    <input type="radio" name="q10" value="important" id="q3c">
+                    <label for="q10c">C.important</label>
+                    <input type="radio" name="q10" value="em" id="q3d">
+                    <label for="q10d">D.em</label>
+                </div>
+            </div>
+            <button type="button" onclick="submitExam()">Submit Exam</button>
+        </form>
+        <div class="result" id="result"></div>
+    </div>
+    <script>
+        const correctAnswers = {
+            q1: 'Charles Babbage',
+            q2: 'Sir Timothy John Berners-Lee',
+            q3: 'HTML',
+            q4: 'padding',
+            q5: 'background-color',
+            q6: 'select',
+            q7: 'table',
+            q8: 'img',
+            q9: 'href',
+            q10: 'strong'           
+        };
+
+        function submitExam() {
+            let score = 0;
+            let totalQuestions = Object.keys(correctAnswers).length;
+            let form = document.getElementById('examForm');
+            let resultDiv = document.getElementById('result');
+
+            // Iterate over each question
+            for (let question in correctAnswers) {
+                let answer = form.querySelector(`input[name="${question}"]:checked`);
+                if (answer && answer.value === correctAnswers[question]) {
+                    score++;
+                }
+            }
+            resultDiv.innerHTML = `<h2>You got ${score} out of ${totalQuestions} correct!</h2>`;
+             form.reset();
+        }
+    </script>
+</body>
+</html>
+
